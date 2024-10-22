@@ -70,6 +70,15 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
+    /**
+     * this removes a city from the city list
+     * no effect if the city is not in the city list
+     * @param city to be removed
+     */
+    public void deleteCity(City city){
+        //cities.remove(city);
+    }
+
 
 
 
