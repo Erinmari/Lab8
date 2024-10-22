@@ -36,13 +36,14 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
-    /**
-     * this adds a city object to the list
-     *the second phase, you can add the
-     city * @param city
-     */
-    public void addCity(City city){
-        list.add(city);
+    @Test
+    public void hasCityTest(){
+        list = MockCityList();
+        City city = new City("Edmonton", "Alberta");
+        list.addCity(city);
+        assertEquals(list.hasCity(city), Boolean.TRUE);
     }
+
+
 
 }
